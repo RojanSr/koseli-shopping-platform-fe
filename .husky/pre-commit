@@ -1,0 +1,13 @@
+echo '🏗️👷 Styling your project before committing👷‍♂️🏗️'
+echo 'please be patient, this may take a while...'
+
+# Check ESLint Standards
+
+pnpm exec prettier . --check ||
+(
+    echo 'failed formatting code with prettier...!
+            Run pnpm exec prettier . --check';
+    false;
+)
+
+echo '🎉 No error found: committing this now.... ✨🚀🏄‍♂️🍻'
