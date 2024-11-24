@@ -6,8 +6,8 @@ import { MdOutlineMailOutline, MdOutlinePhoneInTalk } from "react-icons/md"
 
 const Footer = () => {
   return (
-    <footer className="px-32 pt-8 flex flex-col text-zinc-400 bg-black">
-      <div className="flex gap-6 justify-between flex-grow pb-12  border-solid border-b-[1px] border-b-zinc-700">
+    <footer className="px-8 md:px-16 lg:px-32 pt-8 flex flex-col text-zinc-400 bg-black">
+      <div className="flex gap-6 justify-between flex-grow pb-12  border-solid border-b-[1px] border-b-zinc-700 flex-wrap">
         <div className="flex flex-col gap-4">
           <KoseliLogo withText light />
           <div className="flex items-center gap-3">
@@ -45,7 +45,7 @@ const Footer = () => {
           <input placeholder="Your Email" className="bg-transparent border-solid border-2 border-zinc-600 rounded-lg p-3 outline-none" />
         </div>
       </div>
-      <div className="py-4 flex justify-between gap-3">
+      <div className="py-4 flex flex-wrap justify-between gap-3">
         <div className="flex items-center gap-3">
           <div className="w-10 h-6 rounded-sm bg-zinc-50 bg-contain bg-center bg-no-repeat" style={{ backgroundImage: `url(${VisaLogo})` }}></div>
           <div
