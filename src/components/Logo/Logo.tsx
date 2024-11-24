@@ -2,13 +2,18 @@ import { cn } from "@utils/cn"
 import AppLogo from "../../assets/Logo.svg"
 import AppLogoLight from "../../assets/LogoLight.svg"
 
-const Logo = ({ withText = false, light = false }: { withText?: boolean; light?: boolean }) => {
+type LogoProps = {
+  withText?: boolean
+  light?: boolean
+}
+
+const Logo = ({ withText = false, light = false }: LogoProps) => {
   return (
     <div className="flex items-center gap-2">
-      <img src={light ? AppLogoLight : AppLogo} alt="Koseli Logo" draggable="false" />
+      <img src={light ? AppLogoLight : AppLogo} alt="Koseli Logo" draggable="false" className="" />
       {withText && (
         <p
-          className={cn("select-none font-normal text-4xl", {
+          className={cn("select-none font-normal text-2xl md:text-4xl", {
             "text-zinc-100": light
           })}
         >

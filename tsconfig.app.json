@@ -30,6 +30,7 @@
       "@utils/*": ["./src/utils/*"],
       "@assets/*": ["./src/assets/*"],
       "@layout/*": ["./src/layout/*"],
+      "@hooks/*": ["./src/hooks/*"],
       "@public/*": ["/public/*"]
     }
   },
